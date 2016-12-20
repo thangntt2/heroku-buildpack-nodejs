@@ -172,6 +172,9 @@ summarize_build() {
   list_dependencies "$BUILD_DIR"
 }
 
+header "Webpack build"
+npm run build
+
 header "Build succeeded!"
 summarize_build | output "$LOG_FILE"
 
