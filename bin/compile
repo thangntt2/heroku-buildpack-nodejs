@@ -175,6 +175,9 @@ summarize_build() {
 header "Webpack build"
 npm run build
 
+header "Migrate db"
+npm run migrate:latest
+
 header "Build succeeded!"
 summarize_build | output "$LOG_FILE"
 
